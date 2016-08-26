@@ -1,0 +1,930 @@
+@import 'mixins';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+$main-back-color        : #333;
+$main-theme-color       : rgba(232,92,88,1);
+$main-theme-color-hover : rgba(232,92,88,0.9);
+$main-theme-color-active: rgba(232,92,88,0.8);
+$main-text-color        : #eee;
+$background-color-box   : rgba(0,0,0,0.5);
+$name-wrapper-lg-width  : 500px;
+$name-wrapper-sm-width  : 300px;
+$avatar-dim-sm          : 100px;
+$avatar-dim-md          : 130px;
+$avatar-dim-lg          : 150px;
+$break-w-sm             : 420px;
+$break-w-md             : 820px;
+$break-w-lg             : 1920px;
+$break-h-sm             : 568px;
+$break-h-lg             : 1260px;
+$full-width             : 1920px;
+$logo-dim-lg            : 100px;
+$logo-dim-sm            : 80px;
+$logo-dim-xs            : 40px;
+$text-size-lg           : 58px;
+$text-size-sm           : 47px;
+$text-size-xs           : 23px;
+
+$h1-text-size-lg        : 32px;
+$h2-text-size-lg        : 24px;
+
+$h1-text-size-sm        : 28px;
+$h2-text-size-sm        : 22px;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Helvetica;
+    color: $main-text-color;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Open Sans", Helvetica;
+    font-weight: 100;
+    color: $main-text-color;
+}
+
+a{
+    color:cornflowerblue;
+}
+
+#main-container{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#menu-container{
+    position: fixed;
+    overflow: auto;
+    width:100vw;
+    height:100vh;
+    z-index: 1000;
+    background-color: $main-back-color;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+#views-container{
+    overflow: hidden;
+    max-width: $full-width;
+    margin: auto;
+}
+
+#views-container section{
+    width:100%;
+    max-width: $full-width;
+}
+
+.horiz-center{
+    left:50%;
+    @include translate(-50%,0);
+}
+
+.logo-circle{
+    background-color: $main-theme-color;
+    position:relative;
+}
+
+.logo-chars{
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-name{
+    width:100%;
+    position: relative;
+}
+
+.logo-name-desc{
+    width:100%;
+    position: relative;
+}
+
+#lang-nav, #menu-nav{
+    position: relative;
+    overflow: auto;
+}
+
+.lang-nav-item{
+    position: relative;
+    text-align: center;
+    color: $main-text-color;
+}
+
+.link-animation {
+  position: relative;
+}
+
+.link-animation:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: $main-text-color;
+  content: "";
+  transition: width 0.2s;
+}
+
+.link-animation:hover {
+  cursor: default;
+}
+
+.link-animation:hover:after {
+  width: 100%;
+}
+
+#close{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+
+#close:hover {
+  opacity: 0.3;
+}
+
+#close:before, #close:after {
+  position: absolute;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: $main-text-color;
+}
+
+#close:before {
+  transform: rotate(45deg);
+}
+
+#close:after {
+  transform: rotate(-45deg);
+}
+
+#navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: $main-back-color;
+    max-width: $break-w-lg;
+    left: 50%;
+    @include translate(-50%,0);
+}
+
+#logo-container-navbar{
+    position:fixed;
+    text-align: center;
+}
+
+#menu-button {
+    display: inline;
+    cursor: pointer;
+    margin: 6px 10px;
+    position: absolute;
+}
+
+#menu-button:hover {
+    opacity: 0.3;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: $main-text-color;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.menu-nav-item{
+    display: block;
+    color: $main-text-color;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #222;
+    width:100%;
+    position: relative;
+    color: $main-text-color;
+    text-align: center;
+}
+
+#logo-footer{
+    position: relative;
+    display: inline-block;
+}
+
+#contact-media-wrapper{
+    display: inline-block;
+    padding: 20px;
+}
+
+#contact-media-wrapper div {
+    height: 30px;
+    line-height: 30px;
+    margin: 20px;
+    text-align: left;
+    padding-left: 45px;
+}
+
+#whatsapp-icon{
+    background: url('../img/whatsapp-icon.svg') left no-repeat;
+}
+
+#linkedin-icon{
+    background: url('../img/linkedin-icon.svg') left no-repeat;
+}
+
+
+//-------------view-1--------------//
+#about-me-content{
+    background-color: rgba(0,0,0,0.2);
+    @include border-radius(20px);
+    padding: 10px 20px;
+}
+
+#my-experience-content-5{
+    text-align: center;
+}
+//----------view-3-end-----------//
+
+//-------------view-2--------------//
+.col3{
+    text-align: center;
+}
+
+.service-cell{
+    width: 100%;
+    min-width: 206px;
+    background-color: rgba(0,0,0,0.5);
+    @include border-radius(20px);
+}
+
+.service-cell > h2 {
+    margin: 10px;
+    font-weight: 300;
+}
+
+#service-1-icon{
+    background: url('../img/code.svg') no-repeat center;
+}
+
+#service-2-icon{
+    background: url('../img/smartphone.svg') no-repeat center;
+}
+
+#service-3-icon{
+    background: url('../img/screen.svg') no-repeat center;
+}
+
+#service-4-icon{
+    background: url('../img/database.svg') no-repeat center;
+}
+
+#service-5-icon{
+    background: url('../img/graduation-hat.svg') no-repeat center;
+}
+
+#service-6-icon{
+    background: url('../img/bullhorn.svg') no-repeat center;
+}
+
+.service-details{
+    text-align: center;
+}
+//----------view-2-end-----------//
+
+//-------------view-3--------------//
+.my-experience-item{
+    background-color: rgba(0,0,0,0.5);
+    @include border-radius(20px);
+    margin:20px auto;
+    min-width: 206px;
+    max-width: 650px;
+    padding: 20px;
+}
+
+#my-experience-content-5{
+    text-align: center;
+}
+//----------view-3-end-----------//
+
+//-------------view-4--------------//
+#view-4{
+    #email-input, #name-input, #msg-textarea{
+        height:35px;
+        display: block;
+        border: 1px solid $main-text-color;
+        background-color: $background-color-box;
+        font-size: 16px;
+        padding: 5px;
+        @include border-radius(4px);
+    }
+
+    #msg-textarea{
+        height: 100px;
+        resize: none;
+    }
+
+    #contact-me{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+    }
+    
+    h3{
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+    }
+
+    #btn-input{
+        color: white;
+        height: 40px;
+        display: block;
+        width: 100px;
+        margin: 20px 0 10px 0;
+        border: none;
+        font-size: 16px;
+        background-color: $main-theme-color;
+    }
+
+    #btn-input:hover{
+        background-color: $main-theme-color-hover;
+    }
+
+    #btn-input:active{
+        background-color: $main-theme-color-active;
+    }
+
+    #msg-sent-success{
+        visibility: collapse;
+    }
+    
+    #contact-me-form{
+        background-color: rgba(0,0,0,0.2);
+        @include border-radius(20px);
+        padding: 10px 20px;
+        margin: auto auto 20px auto;
+        width: 90%;
+        max-width: 550px;
+    }
+
+    #email-input, #name-input, #msg-textarea{
+        width: 95%;
+        max-width: 540px;
+        color: $main-text-color;
+    }
+    
+    h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+//----------view-4-end-----------//
+
+//------Large screen width------//
+@media screen and (min-width: $break-w-sm){
+    #logo-container{
+        position:relative;
+        text-align: center;
+    }
+    
+    #logo-container-navbar .logo-chars{
+        color: white;
+    }
+
+    #logo-container-navbar .logo-name, #logo-container-navbar .logo-name-desc{
+        color: $main-back-color;
+        visibility: collapse;
+    }
+    
+    .logo-circle{
+        width:$logo-dim-lg;
+        height: $logo-dim-lg;
+        border-radius: $logo-dim-lg / 2;
+        background-color: $main-theme-color;
+    }
+    
+    #logo-container-navbar{
+        margin-top: 10px;
+    }
+    
+    .logo-chars{
+        font-size: $text-size-lg;
+        line-height: $text-size-lg;
+        margin-top:19px;
+    }
+    
+    .logo-name{
+        margin-top:10px;
+        font-size: $h1-text-size-lg;
+    }
+    
+    .logo-name-desc{
+        width:80%;
+        margin-top: 10px;
+    }
+    
+    #lang-nav{
+        width: 20%;
+        margin:100px 0 0 0;
+    }
+    
+    .lang-nav-item{
+        font-size: $h2-text-size-lg;
+        margin: 30px auto;
+    }
+    
+    #menu-nav{
+        position: relative;
+        width: 500px;
+        top:50%;
+        margin-top:-20px;
+        @include translate(-50%, -50%);
+    }
+    
+    .menu-nav-item{
+        margin:50px 0;
+        font-size: $h1-text-size-lg;
+    }
+    
+    #close {
+      left: 6px;
+      top: 10px;
+    }
+    
+    #close:before, #close:after {
+        left: 15px;
+    }
+    
+    #navbar{
+        height: 50px;
+    }
+    
+    .content-container{
+        width:80%;
+        max-width: $full-width;
+        margin: auto;
+    }
+    
+    //-------------view-1--------------//
+    #view-1{
+        position: relative;
+        background: url('../img/about-me-xl.jpg') center 40px no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        margin: 0;
+    }
+    
+    #view-1{
+        #about-me{
+            display: inline-block;
+            font-size: 62px;
+            text-align: right;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        
+        #about-me-wrapper{
+            position: relative;
+            text-align: right;
+            right:0;
+            margin: auto 0 auto auto;
+        }
+    
+        #about-me-content{
+            text-align: justify;
+            position: relative;
+            font-size: 24px;
+            font-weight: 100;
+            text-shadow: 0px 0px 20px rgb(0,0,0);
+            line-height: 36px;
+        }
+    }
+    //--------end view-1----------//
+    
+    //-------------view-2--------------//
+    #view-2{
+        position: relative;
+        background: url('../img/my-services-xl.jpg') center top no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 15px 0;
+    }
+    
+    #view-2{
+        
+        h2{
+            font-size: 24px;
+        }
+         
+        #services-offered{
+            display: inline-block;
+            font-size: 52px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+            text-align: center;
+            width: 100%;
+        }
+        
+        #my-services-wrapper{
+            position: relative;
+            width: 100%;
+            text-align: left;
+            margin: 0;
+        }
+    
+        #my-services-content{
+            text-align: right;
+            position: relative;
+            font-size: 24px;
+            font-weight: 100;
+            text-shadow: 0px 0px 20px rgb(0,0,0);
+            line-height: 36px;
+        }
+
+        .service-icon{
+            width: 120px;
+            height: 90px;
+            margin: 20px auto 10px auto;
+            background-position: center;
+        }
+        
+        .service-details{
+            margin:0 30px 30px 30px;
+        }
+    }
+    //--------end view-2----------//
+    
+    //-------------view-3--------------//
+    #view-3{
+        position: relative;
+        background: url('../img/my-experience-xl.jpg') center bottom no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+    
+    #view-3{
+        #my-experience{
+            font-size: 52px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+
+        #my-experience-content-5{
+            text-align: center;
+        }
+    }
+
+    //----------end view-3------------//
+    
+    //-------------view-4--------------//
+    #view-4{
+        position: relative;
+        background: url('../img/me-xl.jpg') center center no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+    
+    #view-4{
+        #contact-me{
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+            font-size: 52px;
+        }
+    }
+    //----------end view-4------------//
+}
+
+
+//---------Wider screens--------//
+@media screen and (min-width: $break-w-lg){
+    #views-container{
+        left:50%;
+    }
+}
+
+//-------Medium screens as minimun----/////
+@media screen and (min-width: $break-w-md){
+    //-------------view-1--------------//
+    #about-me-wrapper{
+        position: relative;
+        width: 720px;
+    }
+    //-----------end view-1------------//
+      
+    //-------------view-2--------------//
+    .service-cell{
+        min-height: 330px;
+        margin: 10px;
+    }
+    //-----------end view-2------------//
+    
+    //-------------view-4--------------//
+    #view-4{
+        #contact-me{
+            text-align: center;
+        }
+    }
+    //-----------end view-4------------//
+}
+
+//------Medium screens width------//
+@media screen and (max-width: $break-w-md) and (min-width: $break-w-sm){
+    //-------------view-1--------------//
+    #about-me-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    //--------end view-1----------//
+    
+    //-------------view-2--------------//
+    #services-offered{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .service-cell{
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    
+    .service-icon{
+        width: 120px;
+        height: 90px;
+        margin: 20px auto;
+        background-position: center;
+    }
+    //--------end view-2----------//
+    
+    //-------------view-3--------------//
+    .my-experience-item{
+        width: auto;
+    }
+    //--------end view-3----------//
+    
+    //-------------view-4--------------//
+    #view-4{
+        position: relative;
+        background: url('../img/me-sm.jpg') center center no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+    
+    #view-4{
+        #contact-me{
+            text-align: center;
+        }
+    }
+    //----------end view-4------------//
+}
+
+
+//------Mobile screens width------//
+@media screen and (max-width: $break-w-sm) and (max-height: $break-h-sm) and (orientation:landscape), (max-width: $break-w-sm) and (orientation: portrait) {
+    #logo-container{
+        width:$break-w-sm;
+        position:relative;
+        text-align: center;
+    }
+    
+    .logo-circle{
+        width:$logo-dim-sm;
+        height: $logo-dim-sm;
+        border-radius: $logo-dim-sm / 2;
+    }
+    
+    .logo-chars{
+        font-size: $text-size-sm;
+        line-height: $text-size-sm;
+        margin-top:16px;
+    }
+    
+    .logo-name{
+        margin-top:10px;
+        font-size: $h1-text-size-sm;
+    }
+    
+    .logo-name-desc{
+        width:80%;
+        margin-top: 10px;
+        max-width: 300px;
+    }
+    
+    #lang-nav{
+        width: 100%;
+        margin:60px 0 0 0;
+    }
+    
+    .lang-nav-item{
+        font-size: $h2-text-size-sm;
+        margin: 30px auto;
+    }
+    
+    #menu-nav{
+        position: relative;
+        width:100%;
+        top:50%;
+        margin-top: -50px;
+        @include translate(-50%, -50%);
+    }
+    
+    .menu-nav-item{
+        margin:40px 20px;
+        font-size: $h1-text-size-sm;
+    }
+    
+    #close {
+      left: 6px;
+      top: 6px;
+    }
+    
+    #close:before, #close:after {
+        left: 15px;
+    }
+    
+    #navbar{
+        height: 50px;
+    }
+    
+    #logo-container-navbar{
+        margin-top: 5px;
+        height: 0;
+    }
+    
+    #logo-container-navbar .logo-name, #logo-container-navbar .logo-name-desc{
+        visibility: collapse;
+    }
+    
+    #logo-container-navbar .logo-circle{
+        width:$logo-dim-xs;
+        height: $logo-dim-xs;
+        border-radius: $logo-dim-xs / 2;
+    }
+    
+    #logo-container-navbar .logo-chars{
+        font-size: $text-size-xs;
+        line-height: $text-size-xs;
+        margin-top:8px;
+    }
+    
+    .content-container{
+        width:80%;
+        max-width: $full-width;
+        margin: auto auto 30px auto;
+    }
+    
+    //-------------view-1--------------//
+    #view-1{
+        position: relative;
+        background: url('../img/about-me-sm.jpg') no-repeat;
+        background-size: cover;
+        padding: 60px 0;
+    }
+    
+    #view-1{
+        #about-me{
+            font-size: 42px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+        
+        #about-me-wrapper{
+            position: relative;
+            width: 100%;
+            left:50%;
+            @include translate(-50%,0);
+        }
+    
+        #about-me-content{
+            text-align: center;
+            position: relative;
+            font-size: 22px;
+            font-weight: 100;
+            text-shadow: 3px 3px 10px rgba(0,0,0,1);
+            line-height: 30px;
+            width: 100%;
+        }
+    }
+    //--------end view-1----------//
+    
+    //-------------view-2--------------//
+    #view-2{
+        position: relative;
+        background: url('../img/my-services-xl.jpg') center top no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+    
+    #view-2{
+        #services-offered{
+            display: inline-block;
+            font-size: 42px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+        
+        #my-services-wrapper{
+            position: relative;
+            width: 100%;
+            text-align: left;
+            margin: 0;
+        }
+    
+        #my-services-content{
+            text-align: right;
+            position: relative;
+            font-size: 24px;
+            font-weight: 100;
+            text-shadow: 0px 0px 20px rgb(0,0,0);
+            line-height: 36px;
+        }
+
+        .service-icon{
+            width: 120px;
+            height: 90px;
+            margin: 20px auto 10px auto;
+            background-position: center;
+        }
+        
+        .service-details{
+            margin:auto 30px 10px 30px;
+        }
+        
+        .service-cell{
+            margin: 20px 0;
+            padding: 10px 0;
+        }
+    }
+    //--------end view-2----------//
+    
+    //-------------view-3--------------//
+    #view-3{
+        position: relative;
+        background: url('../img/my-experience-sm.jpg') center bottom no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+    
+    #my-experience{
+        display: inline-block;
+        font-size: 42px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+    }
+    
+    .my-experience-item{
+        width: auto;
+    }
+    //----------end view-3------------//
+    
+    //-------------view-4--------------//
+    #view-4{
+        position: relative;
+        background: url('../img/me-sm.jpg') center center no-repeat;
+        background-size: cover;
+        margin-top: 2px;
+        padding: 10px 0;
+    }
+
+    #view-4{
+
+        #contact-me{
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        
+        h2{
+            text-align: center;
+        }
+            
+        h3{
+            margin: 10px auto 5px 5px;
+        }
+    }    
+    //----------end view-4------------//
+}
