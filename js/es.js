@@ -26,7 +26,7 @@ dictionary.push(about_me_content);
 
 var services_offered_title = ['#services-offered', "Servicios ofrecidos"];
 var service_1 = ["#service-1","Programación web"];
-var service_1_details = ["#service-1-details","Años de experiencia trabajando en el estado del arte con tecnologías web cómo HTML5, JavasScript, CSS3, y otras herramientas para crear páginas web intuitivas, amigables y adaptativas para tablets y celulares."];
+var service_1_details = ["#service-1-details","Años de experiencia trabajando con tecnologías web modernas cómo HTML5, JavasScript, CSS3 y otras herramientas para crear páginas web intuitivas, amigables y adaptables para tablets y celulares."];
 
 var service_2 = ["#service-2","Desarrollo aplicaciones móviles"];
 var service_2_details = ["#service-2-details","Una aplicación para celular bien diseñada y desarrollada puede transformar una idea en una realidad, o en un nuevo servicio a sus clientes. Según cómo usted desee se puede desarrollar para Android, iPhone y/o web."];

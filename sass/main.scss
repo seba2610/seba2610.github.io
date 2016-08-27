@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 
 $main-back-color        : #333;
+$border-darker          : #000;
 $main-theme-color       : rgba(232,92,88,1);
 $main-theme-color-hover : rgba(232,92,88,0.9);
 $main-theme-color-active: rgba(232,92,88,0.8);
@@ -36,6 +37,7 @@ body{
     margin: 0;
     font-family: "Open Sans", Helvetica;
     color: $main-text-color;
+    background-color: $main-back-color;
 }
 
 h1,h2,h3,h4,h5{
@@ -175,6 +177,7 @@ a{
     max-width: $break-w-lg;
     left: 50%;
     @include translate(-50%,0);
+    @include box-shadow(0, 0, 10px, $main-back-color);
 }
 
 #logo-container-navbar{
@@ -224,7 +227,6 @@ footer{
 
 #contact-media-wrapper{
     display: inline-block;
-    padding: 20px;
 }
 
 #contact-media-wrapper div {
@@ -232,17 +234,17 @@ footer{
     line-height: 30px;
     margin: 20px;
     text-align: left;
-    padding-left: 45px;
 }
 
 #whatsapp-icon{
+    padding-left: 45px;
     background: url('../img/whatsapp-icon.svg') left no-repeat;
 }
 
 #linkedin-icon{
+    padding-left: 45px;
     background: url('../img/linkedin-icon.svg') left no-repeat;
 }
-
 
 //-------------view-1--------------//
 #about-me-content{
@@ -410,6 +412,7 @@ footer{
         height: $logo-dim-lg;
         border-radius: $logo-dim-lg / 2;
         background-color: $main-theme-color;
+        @include box-shadow(0, 0, 10px, $main-back-color);
     }
     
     #logo-container-navbar{
@@ -516,7 +519,7 @@ footer{
         position: relative;
         background: url('../img/my-services-xl.jpg') center top no-repeat;
         background-size: cover;
-        margin-top: 2px;
+        border-top: 2px solid $border-darker;
         padding: 15px 0;
     }
     
@@ -570,7 +573,7 @@ footer{
         position: relative;
         background: url('../img/my-experience-xl.jpg') center bottom no-repeat;
         background-size: cover;
-        margin-top: 2px;
+        border-top: 2px solid $border-darker;
         padding: 10px 0;
     }
     
@@ -595,7 +598,7 @@ footer{
         position: relative;
         background: url('../img/me-xl.jpg') center center no-repeat;
         background-size: cover;
-        margin-top: 2px;
+        border-top: 2px solid $border-darker;
         padding: 10px 0;
     }
     
@@ -684,7 +687,6 @@ footer{
         position: relative;
         background: url('../img/me-sm.jpg') center center no-repeat;
         background-size: cover;
-        margin-top: 2px;
         padding: 10px 0;
     }
     
@@ -832,7 +834,7 @@ footer{
         position: relative;
         background: url('../img/my-services-xl.jpg') center top no-repeat;
         background-size: cover;
-        margin-top: 2px;
+        border-top: 2px solid $border-darker;
         padding: 10px 0;
     }
     
@@ -885,7 +887,7 @@ footer{
         position: relative;
         background: url('../img/my-experience-sm.jpg') center bottom no-repeat;
         background-size: cover;
-        margin-top: 2px;
+        border-top: 2px solid $border-darker;
         padding: 10px 0;
     }
     
@@ -908,7 +910,7 @@ footer{
         position: relative;
         background: url('../img/me-sm.jpg') center center no-repeat;
         background-size: cover;
-        margin-top: 2px;
+                border-top: 2px solid $border-darker;
         padding: 10px 0;
     }
 
