@@ -32,7 +32,7 @@ var service_2 = ["#service-2","Desarrollo aplicaciones móviles"];
 var service_2_details = ["#service-2-details","Una aplicación para celular bien diseñada y desarrollada puede transformar una idea en una realidad, o en un nuevo servicio a sus clientes. Según cómo usted desee se puede desarrollar para Android, iPhone y/o web."];
 
 var service_3 = ["#service-3","Desarrollo aplicaciones de escritorio"];
-var service_3_details = ["#service-3-details","Durante años he desarrollado aplicaciones de escritorio para Windows basadas en Microsoft.NET C#, involucrando el uso de tecnologías de punta en interfaces gráficas y comunicación con base de datos para optimizar los tiempos de respuesta y brindar una buena experiencia de usuario."];
+var service_3_details = ["#service-3-details","Durante años he desarrollado aplicaciones de escritorio para Windows basadas en Microsoft.NET C#, involucrando el uso de tecnologías modernas en interfaces gráficas y comunicación con base de datos para optimizar los tiempos de respuesta y brindar una buena experiencia de usuario."];
 
 var service_4 = ["#service-4","Base de datos"];
 var service_4_details = ["#service-4-details","Detrás de todo sistema, hay una base de datos. El uso eficiente y eficaz de la misma es esencial para que un sistema o aplicación sea escalable y funcional. En conjunto con el desarrollo de aplicaciones, he ido obteniendo fuertes conocimientos en base de datos SQL."];

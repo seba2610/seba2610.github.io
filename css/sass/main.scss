@@ -210,6 +210,8 @@ a{
 footer{
     background-color: #222;
     width:100%;
+    max-width: $full-width;
+    margin: auto;
     position: relative;
     color: $main-text-color;
     text-align: center;
