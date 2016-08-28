@@ -29,19 +29,19 @@ var service_1 = ["#service-1","Programación web"];
 var service_1_details = ["#service-1-details","Años de experiencia trabajando con tecnologías web modernas cómo HTML5, JavasScript, CSS3 y otras herramientas para crear páginas web intuitivas, amigables y adaptables para tablets y celulares."];
 
 var service_2 = ["#service-2","Desarrollo aplicaciones móviles"];
-var service_2_details = ["#service-2-details","Una aplicación para celular bien diseñada y desarrollada puede transformar una idea en una realidad, o en un nuevo servicio a sus clientes. Según cómo usted desee se puede desarrollar para Android, iPhone y/o web."];
+var service_2_details = ["#service-2-details","Una aplicación para celular bien diseñada y desarrollada, puede transformar una idea en una realidad o en un nuevo servicio a sus clientes. Según cómo usted desee, se puede desarrollar para Android, iPhone y/o web."];
 
 var service_3 = ["#service-3","Desarrollo aplicaciones de escritorio"];
-var service_3_details = ["#service-3-details","Durante años he desarrollado aplicaciones de escritorio para Windows basadas en Microsoft.NET C#, involucrando el uso de tecnologías modernas en interfaces gráficas y comunicación con base de datos para optimizar los tiempos de respuesta y brindar una buena experiencia de usuario."];
+var service_3_details = ["#service-3-details","Durante años he desarrollado aplicaciones de escritorio para Windows, basadas en Microsoft.NET C# que involucra el uso de tecnologías modernas en interfaces gráficas y  base de datos, para optimizar los tiempos de respuesta y brindar una buena experiencia de usuario."];
 
 var service_4 = ["#service-4","Base de datos"];
-var service_4_details = ["#service-4-details","Detrás de todo sistema, hay una base de datos. El uso eficiente y eficaz de la misma es esencial para que un sistema o aplicación sea escalable y funcional. En conjunto con el desarrollo de aplicaciones, he ido obteniendo fuertes conocimientos en base de datos SQL."];
+var service_4_details = ["#service-4-details","Detrás de todo sistema hay una base de datos. El uso eficiente y eficaz de la misma, es esencial para que un sistema o aplicación sea funcional y escalable. En conjunto con el desarrollo de aplicaciones, he ido obteniendo fuertes conocimientos en base de datos SQL."];
 
 var service_5 = ["#service-5","Clases particulares"];
-var service_5_details = ["#service-5-details",'La enseñanza es algo que me apasiona brindar. <i>"Si querés saber, aprende; si querés saber más, estudia más; si querés volverte un experto, enseña."</i>. Actualmente ofrezco clases particulares en Programación 1 y 2 de la Facultad de Ingeniería.'];
+var service_5_details = ["#service-5-details",'"<i>Si querés saber, aprende; si querés saber más, estudia más; si querés volverte un experto, enseña.</i>"</br>La enseñanza es algo que me apasiona. Actualmente ofrezco clases particulares en Programación 1 y 2 de la Facultad de Ingeniería.'];
 
 var service_6 = ["#service-6","Y más..."];
-var service_6_details = ["#service-6-details","No dude en contactarme por consultas sobre cualquier otro servicio que usted esté necesitando."];
+var service_6_details = ["#service-6-details","Consulte por otros servicios que se ajusten a sus necesidades."];
 
 dictionary.push(services_offered_title);
 dictionary.push(service_1);
