@@ -253,6 +253,12 @@ footer{
     padding: 10px 20px;
 }
 
+#about-me-content{
+    a{
+        color: $main-text-color;
+    }
+}
+
 #my-experience-content-5{
     text-align: center;
 }
@@ -288,7 +294,7 @@ footer{
 }
 
 #service-4-icon{
-    background: url('../img/database.svg') no-repeat center;
+    background: url('../img/server.svg') no-repeat center;
 }
 
 #service-5-icon{

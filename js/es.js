@@ -16,7 +16,7 @@ dictionary.push(contact_me);
 //-----------view-1--------------//
 
 var about_me_title = ['#about-me', "Sobre mí"];
-var about_me_content = ['#about-me-content', "<p>Me llamo Sebastián Caggiano, vivo en Montevideo, Uruguay. Soy <strong>Ingeniero en computación</strong> egresado de la Facultad de Ingeniería de la República. Con 6 años de experiencia laboral, he trabajado en varios proyectos de distintas índoles cómo desarrollador <strong>Full-stack</strong>.</p><p>La experiencia de usuario es uno de los aspectos que más me apasiona y tomo en cuenta, ya que a partir de allí es que se debe realizar un buen diseño, por ello es que me certifiqué cómo <strong>desarrollador Front-End</strong>."];
+var about_me_content = ['#about-me-content', "<p>Me llamo Sebastián Caggiano, vivo en Montevideo, Uruguay. Soy Ingeniero en computación egresado de la <a href='https://www.fing.edu.uy' target='_blank'>UdelaR</a>. Con 6 años de experiencia laboral, he trabajado en varios proyectos de distintas índoles cómo desarrollador Full-stack.</p><p>La experiencia de usuario es uno de los aspectos que más me apasiona y tomo en cuenta, ya que a partir de allí es que se debe realizar un buen diseño, por ello es que me certifiqué cómo <a href='https://www.freecodecamp.com/seba2610/front-end-certification' target='_blank'>desarrollador Front-End</a>."];
 
 dictionary.push(about_me_title);
 dictionary.push(about_me_content);
@@ -34,8 +34,8 @@ var service_2_details = ["#service-2-details","Una aplicación para celular bien
 var service_3 = ["#service-3","Desarrollo aplicaciones de escritorio"];
 var service_3_details = ["#service-3-details","Durante años he desarrollado aplicaciones de escritorio para Windows, basadas en Microsoft.NET C# que involucra el uso de tecnologías modernas en interfaces gráficas y  base de datos, para optimizar los tiempos de respuesta y brindar una buena experiencia de usuario."];
 
-var service_4 = ["#service-4","Base de datos"];
-var service_4_details = ["#service-4-details","Detrás de todo sistema hay una base de datos. El uso eficiente y eficaz de la misma, es esencial para que un sistema o aplicación sea funcional y escalable. En conjunto con el desarrollo de aplicaciones, he ido obteniendo fuertes conocimientos en base de datos SQL."];
+var service_4 = ["#service-4","Servidores y red de datos"];
+var service_4_details = ["#service-4-details","Detrás de todo sistema hay una infraestructura que lo respalda. El uso eficiente y eficaz de la misma, es esencial para lograr la correcta funcionalidad y escalabilidad. En conjunto con la programación, he obtenido conocimientos sólidos en base de datos, redes de datos y mantenimiento de servidores."];
 
 var service_5 = ["#service-5","Clases particulares"];
 var service_5_details = ["#service-5-details",'"<i>Si querés saber, aprende; si querés saber más, estudia más; si querés volverte un experto, enseña.</i>"</br>La enseñanza es algo que me apasiona. Actualmente ofrezco clases particulares en Programación 1 y 2 de la Facultad de Ingeniería.'];
