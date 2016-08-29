@@ -38,7 +38,7 @@ var service_4 = ["#service-4","Servidores y red de datos"];
 var service_4_details = ["#service-4-details","Detrás de todo sistema hay una infraestructura que lo respalda. El uso eficiente y eficaz de la misma, es esencial para lograr la correcta funcionalidad y escalabilidad. En conjunto con la programación, he obtenido conocimientos sólidos en base de datos, redes de datos y mantenimiento de servidores."];
 
 var service_5 = ["#service-5","Clases particulares"];
-var service_5_details = ["#service-5-details",'"<i>Si querés saber, aprende; si querés saber más, estudia más; si querés volverte un experto, enseña.</i>"</br>La enseñanza es algo que me apasiona. Actualmente ofrezco clases particulares en Programación 1 y 2 de la Facultad de Ingeniería.'];
+var service_5_details = ["#service-5-details",'"<i>Si querés saber, aprende; si querés saber más, estudia más; si querés volverte un experto, enseña.</i>"</br>La enseñanza es algo que me apasiona. Actualmente ofrezco clases particulares en Programación.'];
 
 var service_6 = ["#service-6","Y más..."];
 var service_6_details = ["#service-6-details","Consulte por otros servicios que se ajusten a sus necesidades."];
@@ -59,7 +59,7 @@ dictionary.push(service_6_details);
 
 //-----------view-3--------------//
 var my_experience_title = ['#my-experience', "Experiencia laboral"];
-var my_experience_content_1 = ['#my-experience-content-1', '<h2>2010 - Actualidad</h2>Llevo 6 años trabajando en <a href="http://www.sonda.com" target="_blank">Sonda Uruguay S.A.</a>, empresa líder de Latinoamérica en Tecnologías de la Información (IT) de origen chileno con presencia regional en 10 países. He trabajado siempre en el área SIO (Servicios de Integración Outsourcing), donde me involucré en distintos proyectos que implicaron el desarrollo de distintos productos.'];
+var my_experience_content_1 = ['#my-experience-content-1', '<h2>2010 - Actualidad</h2>Llevo 6 años trabajando en <a href="http://www.sonda.com" target="_blank">Sonda</a>, empresa líder de Latinoamérica en Tecnologías de la Información (IT) de origen chileno con presencia regional en 10 países. He trabajado siempre en el área SIO (Servicios de Integración Outsourcing), donde me involucré en distintos proyectos que implicaron el desarrollo de distintos productos.'];
 
 var my_experience_content_2 = ['#my-experience-content-2', '<h2>2010 - 2013</h2>Encargado de interfaz gráfica (GUI), experiencia de usuario (UX) y desarrollo de aplicación web relacionada con la gestión de procesos de negocios (Workflow suite). Actualmente utilizado por 4 empresas clientes. Desarrollado en C#, Microsoft.NET v4.5, utilizando el framework MVC v3, CSS3, JavaScript, jQuery y con base de datos Microsoft SQL Server.'];
 
