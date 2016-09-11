@@ -186,6 +186,10 @@ footer {
   padding-left: 45px;
   background: url("../img/linkedin-icon.svg") left no-repeat; }
 
+#facebook-btn {
+  padding-left: 45px;
+  background: url("../img/facebook-logo.svg") left no-repeat; }
+
 #about-me-content {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 20px;
@@ -397,13 +401,6 @@ footer {
     text-align: right;
     right: 0;
     margin: auto 0 auto auto; }
-  #view-1 #about-me-content {
-    text-align: justify;
-    position: relative;
-    font-size: 24px;
-    font-weight: 100;
-    text-shadow: 0px 0px 20px black;
-    line-height: 36px; }
 
   #view-2 {
     position: relative;
@@ -479,6 +476,14 @@ footer {
     position: relative;
     width: 720px; }
 
+  #about-me-content {
+    text-align: justify;
+    position: relative;
+    font-size: 22px;
+    font-weight: 100;
+    text-shadow: 0px 0px 20px black;
+    line-height: 32px; }
+
   .service-cell {
     min-height: 330px;
     margin: 10px; }
@@ -489,6 +494,14 @@ footer {
   #about-me-wrapper {
     position: relative;
     width: 100%; }
+
+  #about-me-content {
+    text-align: justify;
+    position: relative;
+    font-size: 20px;
+    font-weight: 100;
+    text-shadow: 0px 0px 20px black;
+    line-height: 32px; }
 
   #services-offered {
     width: 100%;
