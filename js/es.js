@@ -69,6 +69,8 @@ var my_experience_content_4 = ['#my-experience-content-4', '<h2>2015 - Actualida
 
 var my_experience_content_5 = ['#my-experience-content-5', '<h2>Para saber más sobre mí, descargue mi <a href="cv.pdf" target="_blank">currículum</a>.'];
 
+var my_experience_content_5 = ['#my-experience-content-5', '<h2>To know more about me, download my<a href="cv_en.pdf" target="_blank">CV</a>.'];
+
 dictionary.push(my_experience_title);
 dictionary.push(my_experience_content_1);
 dictionary.push(my_experience_content_2);
