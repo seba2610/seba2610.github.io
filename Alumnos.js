@@ -1,2 +1,1 @@
-
-var cadenadealumnos='[{"foto":"Jose.jpg","nombre":"Jose","apellido":"Perez","edad":65,"correo":"jmc-g@hotmail.com","telefono":"092818777"},{"nombre":"Luis","apellido":"Suarez","edad":45,"correo":"Lsuarez@hotmail.com","telefono":"099857136"},{"nombre":"Antonio","apellido":"Marcano","edad":78,"correo":"Amarcano@hotmail.com","telefono":"095987365"}]';
+[{"foto":"Jose.jpg","nombre":"Jose","apellido":"Perez","edad":65,"correo":"jmc-g@hotmail.com","telefono":"092818777"},{"nombre":"Luis","apellido":"Suarez","edad":45,"correo":"Lsuarez@hotmail.com","telefono":"099857136"},{"nombre":"Antonio","apellido":"Marcano","edad":78,"correo":"Amarcano@hotmail.com","telefono":"095987365"}]
