@@ -1,94 +1,502 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sebastián Caggiano - Ingeniero en Computación / Computer Engineer</title>
+  <script src="js/color-modes.js"></script>
 
-    <!-- favicon -->
-    <link href="favicon.png" rel=icon>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Sebastián Caggiano">
+  <meta name="generator" content="Sebastián Caggiano - Full-Stack Developer">
+  <title>Sebastián Caggiano - Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="assets/me_square.png" sizes="180x180">
+  <link rel="icon" href="assets/me_square.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/me_square.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="assets/manifest.json">
+  <link rel="icon" href="assets/me_square.ico">
+  <meta name="theme-color" content="#712cf9">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-    <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
 
-    <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    .b-example-divider {
+      width: 100%;
+      height: 1rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-    <!-- owl carousal -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    .lead {
+      text-align: justify;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/heroes.css" rel="stylesheet">
 </head>
+
 <body>
-<div id="main-wrapper">
-<!-- Page Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="status-mes"></div>
-    </div>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
 
-<header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="profile-img">
-                    <img src="img/me-square.jpg" class="img-responsive" alt="" style="margin-bottom:10px;max-width:150px;"/>
-                </div>
-                <!-- Profile Image -->
-            </div>
-            <div class="col-md-9">
-                <div class="name-wrapper">
-                    <h1 class="name" style="display:inline;">Sebastián <h1 style="font-weight:100;display:inline;">Caggiano</h1></h1>
-                    <span style="display:block;">Ingeniero en Computación / Computer Engineer</span>
-                </div>
-                <p>
-                    Hola!, por ahora sólo podrás ver mi <a href="CV_es.pdf" style="text-decoration:underline;" target="_blank">Currículum Vitae.</a>
-                </p>
-                <p>
-                  Hi!, for now, you can only look for my <a href="CV_en.pdf" style="text-decoration:underline;" target="_blank">Resumé.</a>
-                </p>
-                <p>
-                  contacto@scaggiano.com.uy - 099 50 91 52
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
 
-  <footer class="footer">
-      <div class="copyright-section">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="copytext">&copy; Sebastián Caggiano, All rights reserved | Designed by me.</div>
-                  </div>
+  <main>
+    <h1 class="visually-hidden">Sebastián Caggiano - Full-Stack Developer</h1>
+    <div class="px-2 py-3 my-3 text-center">
+      <img class="d-block mx-auto" src="assets/me-square.jpg" alt="" width="150" height="150"
+        style="border-radius: 75px;">
+      <h1 class="display-4 text-body-emphasis">About me...</h1>
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-9 mx-auto">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="lead">On this page you'll find information <strong>about me</strong> that will help you
+                  having a better understanding about my professional career as a <strong>Full-Stack Developer.</strong>
+                </p>
+                <p class="lead">I've more than 13 years of experience, always pursuing the goal of being
+                  <strong>up-to-date</strong> working
+                  with great technologies. Programming and approaching <strong>technical
+                    challenges</strong>, are the things that I love to do the most.
+                <p class="lead">Also mentoring and helping my teammates from a
+                  technical perspective, is something that I always
+                  pursue as a team member.</p>
+                <a type="button" class="btn btn-outline-success btn-lg px-4" href="assets/CV_en.pdf" target="_blank">My
+                  CV</a>
+                <a type="button" class="btn btn-outline-primary btn-lg px-4"
+                  href="https://www.linkedin.com/in/sebasti%C3%A1n-caggiano-2b92a151/" target="_blank">Linked-In</a>
+                <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="mailto:seba2610@gmail.com"
+                  target="_blank">
+                  <span class="w-100 text-center small">seba2610@gmail.com</span>
+                </a>
+                <label class="lead mx-2"><strong>Phone: </strong>(+598) 99 509 152</label>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </footer>
-</div>
-<!-- #main-wrapper -->
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 text-center">Portfolio</h1>
+          <p class="lead text-center">
+            Please join me to take a scroll tour throw my portfolio containing a high level description about the main
+            <strong>projects</strong> I've worked on.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row g-3 py-3">
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2010</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Workflow Tool</h1>
+            <p class="lead">My professional career started at 2010 as a part-time <strong>Junior Developer</strong>,
+              while
+              I was studying for Computer Science Engineer degree at 3rd grade.</p>
+            <p class="lead">My first project, was about creating an internal tool (from zero) for some processes that
+              the
+              company needed to start tracking (features as supporting <strong><a
+                  href="https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation"
+                  target="_blank">BPMN</a></strong>, ability to add notes, move the process to next stage, etc). At that
+              time, <strong>Microsoft</strong> was offering their latest web development platform throw <strong><a
+                  href="https://learn.microsoft.com/en-us/aspnet/mvc/mvc3" target="_blank">MVC.NET 3.0</a></strong></p>
+            <p class="lead">Without even knowing that I started working as a Full-Stack, I started learning about C# for
+              the Back-End, web technologies for Front-End, SQL Server for databases and securities strategies.</p>
+            <p class="lead">After a year of development, the outcome was a very friendly <strong>workflow tool</strong>,
+              based on the latest (at that time) web technologies that resulted to have a very good user adoption.</p>
+            <p class="lead mt-2 mb-0"><strong>Development process</strong></p>
+            <ul class="lead">
+              <li>Team of 3 developers, 1 tester.</li>
+              <li>Daily meetings.</li>
+              <li>Mantis for whiteboard tickets & bugs reports.</li>
+              <li>Weekly meetings with stakeholders.</li>
+            </ul>
+            <p class="lead mb-0"><strong>Keywords</strong></p>
+            <div class="badge rounded-pill bg-primary">C#</div>
+            <div class="badge rounded-pill bg-primary">MVC.NET 3.0</div>
+            <div class="badge rounded-pill bg-primary">Razor</div>
+            <div class="badge rounded-pill bg-primary">HTML 5</div>
+            <div class="badge rounded-pill bg-primary">CSS 3</div>
+            <div class="badge rounded-pill bg-primary">SQL Server 2010</div>
+            <div class="badge rounded-pill bg-primary">Client-Server arquitecture</div>
+            <div class="badge rounded-pill bg-primary">.NET Identity</div>
+            <div class="badge rounded-pill bg-primary">Workflow</div>
+            <div class="badge rounded-pill bg-primary">BPMN</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2012</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Emergencies System</h1>
+            <p class="lead">At 2012, I shifted from web technologies to start working on desktop technologies based on
+              <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=netdesktop-7.0"
+                target="_blank"><strong>Microsoft WPF</strong></a> for emergencies. Behind that app, there were many
+              differents <strong>systems
+                and services</strong>:
+            <ul class="lead">
+              <li>IP telephony</li>
+              <li>GIS maps</li>
+              <li>Surveillance handies & cameras</li>
+              <li>Events manager</li>
+              <li>More...</li>
+            </ul>
+            </p>
+            <p class="lead">Because of the nature of the app (emergencies), was mandatory to have all those
+              <strong>services integrated</strong> and working on a <strong>single window</strong>, interacting each
+              other in a way that
+              the operator could respond quickly to the emergency, with all the tools needed within the app.
+            </p>
+            <p class="lead mt-2 mb-0"><strong>Development process</strong></p>
+            <ul class="lead">
+              <li>Team of 7 developers, 1 UX/UI designer, 3 testers.</li>
+              <li>Daily meetings.</li>
+              <li>Daily collaboration with external systems counterparties.</li>
+              <li>Mantis for whiteboard tickets & bugs reports.</li>
+              <li>Weekly meetings with stakeholders.</li>
+            </ul>
+            <p class="lead mb-0"><strong>Keywords</strong></p>
+            <div class="badge rounded-pill bg-success">C#</div>
+            <div class="badge rounded-pill bg-success">WPF</div>
+            <div class="badge rounded-pill bg-success">WCF</div>
+            <div class="badge rounded-pill bg-success">Microsoft DAO</div>
+            <div class="badge rounded-pill bg-success">SQL Server</div>
+            <div class="badge rounded-pill bg-success">Services integrations</div>
+            <div class="badge rounded-pill bg-success">TFS</div>
+            <div class="badge rounded-pill bg-success">Scrum Methodology</div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-lg-row g-3">
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2017</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Handies audio player</h1>
+            <p class="lead">A spinoff project from the previous one, was about the need from the operators to have all
+              handies communication within an app, in a way they were able to reproduce them as a music player (Forward,
+              Backward, Play, Pause, Stop).</p>
+            <p class="lead">Because of the nature of the servers behind this communication network, there were many
+              technicals challenges to overcome (sometime that finally did it successfully).</p>
+            <p class="lead">One of the key solution to make this work, was about creating a audio player as a clickable
+              timeline, using <a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank"><strong>HTML
+                  Canvas</strong></a> to render and visualize all the needed information (as an audio mixer timeline). I
+              dedicated 3 months of work dedicated only to make this work.</p>
+            <p class="lead">The tecnology stack (I participated in the 3 layers) were:
+            <ul class="lead">
+              <li><strong>Front-End: </strong>developed using TypeScript with <a href="https://angular.io/"
+                  target="_blank"><strong>Angular</strong></a>. Because of the special needs for the app, a big part
+                also was developed with Vanilla JavaScript and the natives HTML5 elements.</li>
+              <li><strong>Back-End: </strong>was built as an <a href="https://en.wikipedia.org/wiki/REST"
+                  target="_blank"><strong>RESTful API</strong></a> developed with <a
+                  href="https://es.wikipedia.org/wiki/.NET_Core" target="_blank"><strong>.Net Core 2.0</strong></a> (the
+                latest at that time). With <a href="https://jwt.io/" target="_blank"><strong>Token
+                    JWT</strong></strong></a> as security layer.</li>
+              <li><strong>Database: </strong>was SQL Server with SQL Service Broker for communications between servers.
+              </li>
+            </ul>
+            </p>
+            <p class="lead mt-2 mb-0"><strong>Development process</strong></p>
+            <ul class="lead">
+              <li>Team of 4 developers, 1 tester.</li>
+              <li>Daily meetings.</li>
+              <li>TFS as Source Control.</li>
+            </ul>
+            <p class="lead mb-0"><strong>Keywords</strong></p>
+            <div class="badge rounded-pill bg-warning">C#</div>
+            <div class="badge rounded-pill bg-warning">.Net Core 2.0</div>
+            <div class="badge rounded-pill bg-warning">Angular</div>
+            <div class="badge rounded-pill bg-warning">TypeScript</div>
+            <div class="badge rounded-pill bg-warning">HTML5</div>
+            <div class="badge rounded-pill bg-warning">JavaScript</div>
+            <div class="badge rounded-pill bg-warning">SQL Server 2015</div>
+            <div class="badge rounded-pill bg-warning">TFS</div>
+            <div class="badge rounded-pill bg-warning">Token JWT</div>
+            <div class="badge rounded-pill bg-warning">RESTful API</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end">Year: 2019</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Oil Operations & Forecasting Platform</h1>
+            <p class="lead">At 2019, I decided to start working on a completely different stack technology, <a
+                href="https://nodejs.org/es" target="_blank"><strong>NodeJS</strong></a><em> oriented</em> and their
+              ecosystem around using <a href="https://webpack.js.org/" target="_blank"><strong>Webpack</strong></a>, <a
+                href="hhttps://www.npmjs.com/" target="_blank"><strong>NPM</strong></a>, <a href="http://expressjs.com/"
+                target="_blank"><strong>ExpressJS</strong></a> and <a
+                href="https://Developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
+                target="_blank"><strong>JavaScript exports</strong></a></li>
+              </ul>
+            </p>
+            <p class="lead">We started to design and build 4 differents products requested by the client. Because of the
+              special needs, we decided to make all using <a href="https://jquery.com/"
+                target="_blank"><strong>jQuery</strong></a> with <a
+                href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
+                target="_blank"><strong>Bootstrap</strong></a> , without using any other big Front-End framework. It
+              turned out to be the right choice, since the client requirements resulted to very specific needs that we
+              were able to fulfilled successfully.</p>
+            <p class="lead">
+              The differents views within each apps, involved many plots, grids and dashboards using specific frameworks
+              as <a href="https://www.highcharts.com/" target="_blank"><strong>Highcharts</strong></a> and <a
+                href="https://www.ag-grid.com/" target="_blank"><strong>Ag-Grid</strong></a>.
+            </p>
+            <p class="lead">
+              My role for each of these apps was as a Full-Stack Developer, and here is where I got more than 4 years of
+              experience working daily with JavaScript in Back-end, jQuery, charts & plots in Front-End, as well as <a
+                href="https://www.postgresql.org/" target="_blank"><strong>PostgreSQL</strong></a> in database and with
+              <a href="https://azure.microsoft.com/es-es" target="_blank"><strong>Azure</strong></a> (where all the apps
+              were hosted).
+            </p>
+            <p class="lead mt-2 mb-0"><strong>Development process</strong></p>
+            <ul class="lead">
+              <li>Team of 4 developers, 1 tester.</li>
+              <li>Scrum Methodology.</li>
+              <li>Jira Tickets.</li>
+              <li>GIT Bitbucket as Source Control.</li>
+            </ul>
+            <p class="lead mb-0"><strong>Keywords</strong></p>
+            <div class="badge rounded-pill bg-success">Node-JS</div>
+            <div class="badge rounded-pill bg-success">Expres-JS</div>
+            <div class="badge rounded-pill bg-success">NPM</div>
+            <div class="badge rounded-pill bg-success">Webpack</div>
+            <div class="badge rounded-pill bg-success">JavaScript</div>
+            <div class="badge rounded-pill bg-success">jQuery</div>
+            <div class="badge rounded-pill bg-success">Highcharts</div>
+            <div class="badge rounded-pill bg-success">Ag-grid</div>
+            <div class="badge rounded-pill bg-success">Dashboards</div>
+            <div class="badge rounded-pill bg-success">Scrum</div>
+            <div class="badge rounded-pill bg-success">Jira</div>
+            <div class="badge rounded-pill bg-success">GIT</div>
+            <div class="badge rounded-pill bg-success">Azure</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col py-3">
+          <div class="alert alert-warning small mb-0" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+              <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </symbol>
+            </svg>
+            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:" style="height: 24px; width: 24px;">
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            Because of confidentiality terms with the companies I've worked and the differents products I developed, I
+            cannot describe any specific details about it.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 text-center">Academic degrees</h1>
+        </div>
+      </div>
+      <div class="row flex-lg-row g-3 py-3">
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2016</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Computer Science Engineer</h1>
+            <p class="lead">Graduated from <a href="https://www.fing.edu.uy/" target="_blank">Facultad de Ingeniería</a>
+              - Universidad de la República Oriental del Uruguay (UdelaR).
+            </p>
+            <p class="lead">
+              My Graduation project was about Red apple recognition from images. Developed in C++ with OpenCV as Image
+              processing frameworks.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2016</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Front-End Developer certiﬁcate</h1>
+            <p class="lead">Certiﬁcate obtained from <a href="https://www.freecodecamp.com/" target="_blank">Free Code
+                Camp</a> wich involved small projects developments, including basic and medium scripting with
+              JavaScript. Also jQuery, HTML y CSS3.</p>
+            <p class="lead">The course took 200 hours in basic and medium projects, 100 hours basic and medium
+              scripting, 150 hours in advanced projects, with a total of 450 hours.
+            </p>
+            <p class="lead">You can download the certficate <a
+                href="https://www.freecodecamp.org/certification/seba2610/legacy-front-end" target="_blank">here</a>.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2012</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">First Certiﬁcate</h1>
+            <p class="lead">Succesfully approved the <a href="https://michiganassessment.org/michigan-tests/ecce/"
+                target="_blank"><strong>ECCE</strong></a> coursed in <a href="https://www.alianza.edu.uy/en/"
+                target="_blank">Alianza Cultural Uruguay-Estados Unidos de América.</a>
+            </p>
+            <p class="lead">
+              Previously finished the Full English Career (Basic, Medium and Advanced) in reading, writing and oral in
+              North-America english.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 text-center">Training</h1>
+        </div>
+      </div>
+      <div class="row flex-lg-row g-3 py-3">
+        <div class="col-lg-12">
+          <div class="p-5 bg-body-tertiary rounded-3 h-100">
+            <div class="badge bg-secondary float-end me-1">Year: 2017-2021</div>
+            <h1 class="display-6 text-body-emphasis lh-1 mb-3">Web Developer Trainer</h1>
+            <p class="lead">While I was working as a developer, I got the offer to start teaching Web & .NET development within the program <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a Progamar</a> from <a href="https://ceibal.edu.uy/" target="_blank">Plan Ceibal</a>. It was a very nice experience that put me side-by-side with juniors or inexperienced young people trying to find their way into the programming world.
+            <p class="lead">
+              This experience last 4 years, with different roles inside the program. Started as a classroom teacher, and then shifted to the academic team proposing excercises and ellaborating excercises for different Web development and .Net courses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!--owl carousal-->
-<script src="js/owl.carousel.min.js"></script>
-<!--theme script-->
-<script src="js/scripts.js"></script>
 </body>
+
 </html>
